@@ -16,29 +16,10 @@
 ## 保有スキル
 
 - プログラミング
-  - Frontnend
-    - HTML
-    - CSS / SCSS
-    - JavaScript
-    - TypeScript
-    - React.js
-    - Next.js
-    - Vue.js（v2を少しだけ）
-    - Vuetfy（少しだけ）
-  - BackEnd
-    - PHP
-    - Laravel
-    - FuelPHP
-    - GoLang（少しだけ）
-    - C#（少しだけ）
-    - Node.js
+    
+
   - ServerSide
     - Linuxサーバー（Ubuntu, Amazon Linux, CentOS, RaspberryPi自宅サーバー）
-    - MySQL
-    - Postgresql
-    - MongoDB
-    - Supabase
-    - Firebase
     - Docker
     - KVM
   - Network
@@ -62,11 +43,32 @@
 
 ### 言語
 
-- 
+- HTML
+- CSS / SCSS
+- JavaScript
+- TypeScript
+- PHP
+- GoLang（少しだけ）
+- C#（少しだけ）
+- Node.js
+- SQL等
+  - MySQL
+  - Postgresql
+  - MongoDB
 
 ### フレームワーク・その他
 
-- 
+- frontend
+  - React.js
+  - Next.js
+  - Vue.js（v2を少しだけ）
+  - Vuetfy（少しだけ）
+- BackEnd
+  - Laravel
+  - FuelPHP
+  - .NETASP
+  - Supabase
+  - Firebase
 
 ---
 

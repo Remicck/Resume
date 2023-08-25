@@ -59,6 +59,9 @@
 
 - ServerSide
   - Linuxサーバー（Ubuntu, Amazon Linux, CentOS, RaspberryPi自宅サーバー）
+    - Apache
+    - Nginx
+    - pm2
   - Docker
   - KVM
 - Network
@@ -131,3 +134,16 @@
 
 光コラボのサービスとして、会員特典部分の専用Webサイトの実装  
 動画アーカイブ機能の実装として、ログインユーザーのみが閲覧可能な動画配信Webサービスを開発  
+
+### 業務外
+
+#### QRコードスキャナー ＋ 実績取り込みDB
+
+- 職務：PM
+- 業務：要検定義、設計、開発、テスト、リリース、保守
+
+キーエンス製Android型QRコードスキャナーを使い、伝票番号を取得、各種入力を行いDBに保存するアプリケーションの実装  
+住宅向け建材製造工場にて利用中  
+ダッシュボード機能も作成し、現在はダッシュボード画面を全画面にして工場内のモニターに表示、現在の実績を表示している
+
+使用技術：Next.js + TypeScript + Prisma.js + MySQL + Amazon Lightsail + Mackerel

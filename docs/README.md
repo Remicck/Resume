@@ -48,7 +48,7 @@
   - MySQL
   - PostgreSQL
   - MongoDB
-  - ※CRM開発で想定されるRDBのSQLは概ね手書き可能
+  - ※CRM開発で想定されるRDBのSQLはおおむね手書き可能
     - SQLの高速化についても経験多数
     - 障害対応についても複数経験あり
 

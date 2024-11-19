@@ -1,5 +1,8 @@
 name: build pdf
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:

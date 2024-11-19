@@ -27,7 +27,7 @@
   - 日本語
   - 英語（リーディング少々）
 - 資格
-  - 自動車免許（普通）
+  - 自動車免許（普通、ゴールド）
 
 ---
 
@@ -48,16 +48,19 @@
   - MySQL
   - PostgreSQL
   - MongoDB
-  - （CRM開発で想定されるRDBのSQLは手書き可能）
+  - ※CRM開発で想定されるRDBのSQLは概ね手書き可能
+    - SQLの高速化についても経験多数
+    - 障害対応についても複数経験あり
 
 ### フレームワーク・その他
 
 - FrontEnd
-  - React.js
+  - React
   - Next.js
   - Vue.js（v2を少しだけ）
   - Vuetfy（少しだけ）
   - Tauri
+  - jQuery
 - BackEnd
   - Laravel
   - FuelPHP
@@ -73,9 +76,13 @@
     - nginx
     - pm2
     - MySQL
+    - Postgresql（Row Level Securityを含む）
     - ElasticSearch
+    - BullMQ（Task Queueing）
   - Docker
   - KVM
+  - AWS ECS（App, Worker(BullMQ), Gotenberg）
+  - Metabase
 - Network
   - 移転に伴う社内ネットワーク構築
   - VPN設定
@@ -86,6 +93,7 @@
   - その他CRM導入に伴う要件定義からメンバーの管理周り、折衝ごと全般
 - Management
   - エンジニアチーム マネージャー職歴（2020〜）
+  - 中途採用（エンジニア採用）
 - PdM
   - 社内ソフトウェアのOSS版PdM（2020〜2022）
   - 社内新規開発アプリケーションPdM（2022～）
@@ -100,8 +108,10 @@
     - EC2 ＋ RDS ＋ Redis ＋ OpenSearchを使ったReact.js ＋ PHP ＋ MySQL環境
     - Lambdaを使ったS3 → Lambda → SessionManager → EC2 → CSVインポートによる基幹システム連携
     - Amazon SNSを使ったiOS向けPush通知環境実装（PHPからのPush通知実装）
+  - Firebase Cloud Messagingを用いたWebPush実装
   - IAM管理業務
   - iOSの開発、アプリ更新
+  - Tauriを用いたWindowsアプリケーションの開発（[Remicck/noshi_generator](https://github.com/Remicck/noshi_generator)）
 
 ---
 
@@ -138,17 +148,19 @@
 食品販売会社SFAツールリプレイス案件として、提案のプレゼンから簡易的な業務コンサルティングによるプロセスマップの作成、その他PMとして予算管理・人員管理・進捗管理を行い2023年5月にリリース。  
 現在も追加機能開発として設計・開発を行いつつ、保守対応を行う。
 
-600人の営業員が全員毎日利用しており、日々入力を行っている。  
-最終的に2000人弱のユーザーが対象となる予定。
+2000人の営業員が全員毎日利用しており、日々入力を行っている。
 
 役割はPMで、開発した範囲は以下の範囲のみとなる。
 
 - 初期のフロントエンドリポジトリの設計、プロジェクト作成
-- iOSアプリケーションのPush通知部分
-- Amazon S3 ＋ Lambda + CSV連携の連携器盤の実装
-- Azure ADを用いたSSOログイン印象部分と、そのAPI実装
+- iOSアプリケーションのPush通知受取部分
+- Amazon S3 ＋ Lambda + CSV連携の連携基盤の実装
+- Azure ADを用いたSSOログイン認証部分と、そのAPI実装
 - React.js部分の一部の画面の実装（Chart.jsを用いたグラフ表示、ハーフモーダルUIを用いた商品詳細画面）
 - AWS上に展開されるインフラ構築のネットワーク部分を除いたすべての範囲
+- 一部APIの実装＋不具合修正
+- SQL高速化作業全般
+- その他、SFAアプリケーション内画面の実装とバグ取り作業等を実施
 
 PMとしての要件定義期間、コンサル業務にも従事。
 
@@ -200,6 +212,7 @@ Shadcn＋Tailwindcssを用いたデザインの実装、axiosでのAPIのつな�
 - Shadcn
 - Jest
 - F-RevoCRM（新REST APIと、PHP, MySQLによる追加API実装）
+- Docker
 
 ### 株式会社Threerings（2014 年 05 月〜 2018 年 03 月）
 
@@ -228,13 +241,14 @@ IDPosを用いた分析サービスの開発に、PMOとして従事
 
 - 光コラボのサービスとして、会員特典部分の専用Webサイトの実装
 - 動画アーカイブ機能の実装として、ログインユーザーのみが閲覧可能な動画配信Webサービスを開発
+- Vimeoのドメイン認証を利用
 
 #### Office365 Outlookカレンダー連携、カレンダーアプリケーション実装
 
 - 職務：サブPM＋ソフトウェアエンジニア
 - 業務：要検定義、設計、開発（フロント）、テスト、リリース、保守
 
-- .NET ASPを利用し、Office365のカレンダーを、リソースカレンダーベースにして表示するアプリケーションの実装
+- .NET ASP（C#）を利用し、Office365のカレンダーを、リソースカレンダーベースにして表示するアプリケーションの実装
 
 #### 星取表作成
 

@@ -267,6 +267,47 @@ IDPosを用いた分析サービスの開発に、PMOとして従事
 
 ### 業務外
 
+#### Image Data Extractor - AI統合データ抽出プラットフォーム（2024/06 〜 現在）
+
+- 職務：PdM・フルスタックエンジニア
+- 業務：アーキテクチャ設計、実装
+
+**プロジェクト概要**  
+画像からAIを活用してデータを自動抽出し、外部システムにWebhook送信する法人向けBtoB SaaSプラットフォーム。レシート、名刺、各種帳票を撮影するだけで、事前定義したJSON形式のデータに変換・自動送信する業務自動化システム。
+
+**主要技術スタック**
+- **フロントエンド**: Next.js 15 (App Router) + React 19 + TypeScript (strict mode)
+- **バックエンド**: Next.js API Routes + Prisma ORM + PostgreSQL
+- **認証**: NextAuth.js (マルチテナント対応)
+- **AI統合**: Google GenAI API (Gemini)
+- **UI/UX**: Tailwind CSS 4 + Shadcn/ui
+- **開発環境**: Docker + pnpm + Biome (リンター/フォーマッター)
+- **テスト**: Playwright (E2E)
+
+**実装した主要機能**
+- マルチテナント対応認証システム（階層ロール管理：SYSTEM_ADMIN/ADMIN/USER）
+- リアルタイム画像解析・データ抽出機能（Google GenAI API統合）
+- 柔軟なテンプレート作成システム（JSONスキーマエディタ）
+- Webhook連携（外部システム自動送信・リトライ機能）
+- 管理者向けダッシュボード（テナント統計・ユーザー管理）
+- データエクスポート機能（CSV出力）
+- 権限ベースアクセス制御（リソースレベル認可）
+
+**開発体制・技術的挑戦**
+- チーム規模：1名（+ Claude Code）
+- 最新技術スタック採用（Next.js 15, React 19リリース直後に導入）
+- TypeScript strict mode + Biome導入による高品質コード維持
+- マルチテナント設計でのデータ分離・セキュリティ確保
+- AI API統合における精度向上・エラーハンドリング最適化
+- Prisma ORM + PostgreSQL JSON型活用による柔軟なスキーマ設計
+
+**成果・学習内容**
+- 最新Next.js App Router完全対応アプリケーション構築
+- AI統合Webアプリケーションの企画・設計・実装経験
+- マルチテナントSaaSアーキテクチャの設計・実装スキル習得
+- モダンフロントエンド技術（React 19, TypeScript strict mode）の実践活用
+- Biome等の最新開発ツール導入による開発効率向上
+
 #### QRコードスキャナー ＋ 実績取り込みDB
 
 - 職務：PM

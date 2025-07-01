@@ -1,16 +1,21 @@
-name: lint text
+name: Lint Text
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
 
 jobs:
-  build:
-    name: lint text
-    runs-on: ubuntu-22.04
+  lint:
+    name: Lint Text
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install
-      - name: lint text
+          cache: 'npm'
+      - run: npm ci
+      - name: Run text linting
         run: npm run lint

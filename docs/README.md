@@ -59,7 +59,7 @@
   - Next.js
   - Vue.js（v2を少しだけ）
   - Vuetfy（少しだけ）
-  - Tauri
+  - Tauri（V1→V2）
   - jQuery
 - BackEnd
   - Laravel
@@ -77,29 +77,40 @@
     - pm2
     - MySQL
     - Postgresql（Row Level Securityを含む）
-    - ElasticSearch
+    - ElasticSearch（OpenSearch）
     - BullMQ（Task Queueing）
   - Docker
   - KVM
   - AWS ECS（App, Worker(BullMQ), Gotenberg）
   - Metabase
+  - Supabase
+  - Redis
+  - 社内開発サーバー整備（KVM環境）
 - Network
-  - 移転に伴う社内ネットワーク構築
+  - 移転に伴う社内ネットワーク構築全般の対応
   - VPN設定
+    - 特にL2 VPNで構築した、モバビジの多拠点との共同利用周り
+  - pfSense
   - 自宅サーバー関係（Raspberry Pi、Windows）
-  - 社内開発サーバー整備（KVM）
+  - Tailscale
 - PM
   - 2億規模のWebアプリケーション受託開発のPM（平時5人/月、最大12人）
+  - AI活用アプリケーションのPM
+  - Gemini Live APIを用いたアプリケーションのPM
   - その他CRM導入に伴う要件定義からメンバーの管理周り、折衝ごと全般
+  - 特に顧客の業務要件のヒアリング、とシステムとの中間の翻訳業務と、最終的にシステムへ落とす部分が得意
 - Management
   - エンジニアチーム マネージャー職歴（2020〜）
   - 中途採用（エンジニア採用）
+  - エンジニア評価制度の改定周りの主担当
+  - 1on1の実施
 - PdM
-  - 社内ソフトウェアのOSS版PdM（2020〜2022）
-  - 社内新規開発アプリケーションPdM（2022～）
+  - 社内ソフトウェアのOSS版PdM（2020〜2022, 2025～）
+  - 社内新規開発アプリケーションPdM（2022～, 2024～）
 - コンサルティング
   - プロセスマップの作成
   - 要求機能一覧の作成
+  - AI活用関連の相談役（RAG、MCP、DWH周り）
 - 営業（※小規模の会社に居たため）
   - プリセールス
   - 契約書関係（NDA、基本契約、個別契約、業務提携契約周りの経験）
@@ -108,6 +119,7 @@
     - EC2 ＋ RDS ＋ Redis ＋ OpenSearchを使ったReact.js ＋ PHP ＋ MySQL環境
     - Lambdaを使ったS3 → Lambda → SessionManager → EC2 → CSVインポートによる基幹システム連携
     - Amazon SNSを使ったiOS向けPush通知環境実装（PHPからのPush通知実装）
+    - その他一般的なAWSのツール群の利用
   - Firebase Cloud Messagingを用いたWebPush実装
   - IAM管理業務
   - iOSの開発、アプリ更新
@@ -120,7 +132,7 @@
 ### Thinkingreed株式会社（2018/04 〜 現在）
 
 - 2018.04 ~ : システムエンジニア
-- 2020.04 ~ : エンジニアリングチームマネージャー
+- 2020.04 ~ : エンジニアリングチーム マネージャー
 - 2022.04 ~ : エンジニアリングチーム 製品開発グループ マネージャー
 
 #### F-RevoCRM導入（複数実績）
@@ -318,3 +330,15 @@ IDPosを用いた分析サービスの開発に、PMOとして従事
 - ダッシュボード機能も作成し、現在はダッシュボード画面を全画面にして工場内のモニターに表示、現在の実績を表示している
 
 - 使用技術：Next.js + TypeScript + Prisma.js + MySQL + Amazon Lightsail + Mackerel
+
+#### AI支援型、仕様書作成ツール（開発中）
+
+- 職務：PdM
+- 業務：要検定義、設計、開発
+
+- ClaudeCodeを使ったアプリケーション作成をテスト中
+- Next.js + Prisma.js + Postgresqlで作成
+- Geminiを使う、片方側が要求した資料を、相手がAIとディスカッションしながら作成を進めるツールの実装
+- マルチテナント機能の実装
+- 主にレビュー担当
+- Lightsail上にnginx + Docker Composeで環境構築（App + Gotenberg + Postgresql + Let's Encrypt）

@@ -300,8 +300,8 @@ IDPosを用いた分析サービスの開発に、PMOとして従事
 
 **主要技術スタック**
 - **フロントエンド**: Next.js 15 (App Router) + React 19 + TypeScript (strict mode)
-- **バックエンド**: Next.js API Routes + Prisma ORM + PostgreSQL
-- **認証**: NextAuth.js (マルチテナント対応)
+- **バックエンド**: Next.js API Routes + Prisma O/Rマッパ + PostgreSQL
+- **認証**: NextAuth.js (マルチテナント対応）
 - **AI統合**: Google GenAI API (Gemini)
 - **UI/UX**: Tailwind CSS 4 + Shadcn/ui
 - **開発環境**: Docker + pnpm + Biome (リンター/フォーマッター)
@@ -322,7 +322,7 @@ IDPosを用いた分析サービスの開発に、PMOとして従事
 - TypeScript strict mode + Biome導入による高品質コード維持
 - マルチテナント設計でのデータ分離・セキュリティ確保
 - AI API統合における精度向上・エラーハンドリング最適化
-- Prisma ORM + PostgreSQL JSON型活用による柔軟なスキーマ設計
+- Prisma O/Rマッパ + PostgreSQL JSON型活用による柔軟なスキーマ設計
 
 **成果・学習内容**
 - 最新Next.js App Router完全対応アプリケーション構築
